@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="../css/contactme.css" />
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="body" class="container">
+
+	<nav id="nav" class="navbar navbar-expand-lg ">
+
+		<div class="container">
+
+			<ul class="navbar-nav mr-auto">
+
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">HOMEPAGE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">BLOG</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contact" href="contactme.html">CONTACT ME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">GALLERY</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="registration.html">REGISTER</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="services.html">OUR SERVICES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="team.html">OUR TEAM</a>
+					</li>
+
+				</ul>
+
+				<ul class="navbar-expand navbar">
+
+					<form class="form-inline my-2 my-lg-0" id="searching" action="https://google.com/search" method="get" target="_blank">
+
+						<input type="text" name="q" placeholder="Search" />
+						<input type="submit" value="Search" />
+
+					</form>
+
+
+				</ul>
+
+			</ul>
+
+		</div>
+
+	</nav>
+
+	<div id="formdiv" class="form-group">
+
+		<h4>Please fill this form:</h4><br>
+		<br><form id="form" action="response.html" method="get">
+
+		<label class="form-group" for="name">Name:</label>
+		<input class="form-control" id="name" type="text" required /><br><br>
+
+		<label class="form-group" for="surname">Surname:</label>
+		<input class="form-control" id="surname" type="text" required /><br><br>
+
+		<label class="form-group" for="email">E-Mail:</label>
+		<input class="form-control" id="email" type="email" placeholder="example@gmail.com" required /><br><br>
+
+		<label class="form-group" for="phone">Telephone:</label>
+		<input class="form-control" id="phone" type="tel" maxlength="11" placeholder="12345678910" pattern="[0-9]{11}" required /><br><br>
+
+		<label class="form-group" for="issue">Issue:</label>
+
+		<select class="form-control" id="issue" required >
+			<option value="">Your issue</option>
+			<option >Skin Disease</option>
+			<option >Dental Disease</option>
+			<option >Bites</option>
+			<option >Animal Cruelty</option>
+			<option >Outdoor Animal</option>
+			<option >Aggression</option>
+			<option >Vomiting</option>
+			<option >Other</option>
+		</select><br><br>
+
+
+		<label class="form-group" for="messagebox">Message:</label><br>
+		<textarea class="form-control" id="messagebox" rows="4" cols="50" placeholder="Max: 200 characters." maxlength="200" required>
+</textarea><br>
+
+		<input class="form-control" type="submit" value="Send"/><br><br>
+
+	</form>
+		OR<br>
+		<br><p>Contact from the address below:</p>
+		<br><address>
+		<a id="emailcontact" href="mailto:flufball@hotmail.com">fluffball@hotmail.com</a><br>
+	</address><br><br>
+
+		<br><a href="index.html">
+		<img class="img-responsive" id="homebutton" src="../images/home.png" alt="HomepageButton" title="Home">
+	</a><br><br>
+
+		<a href="mailto:flufball@hotmail.com">
+			<img class="img-responsive" id="gmailbutton" src="../images/gmailicon.png" alt="MailButton" title="MailButton">
+		</a>
+
+	</div>
+
+<footer id="footer" class="container">
+If you have any problem with our clinic, please contact me by clicking <a id="link" href="contactme.html">"Contact Me"</a> page.<br>
+Copyright © 2020 Batın Özkurt. All Rights Reserved
+</footer>
+
+</div>
+</body>
+
+</html>

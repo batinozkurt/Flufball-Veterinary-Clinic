@@ -1,0 +1,54 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+header, section, footer, aside, nav, article, hgroup{
+	display:block;
+}
+body{
+	text-align:center;
+	background-image:url("../images/background.jpg");
+}
+#body{
+	border: 1px solid black;
+	margin: 20px auto;
+	text-align:left;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#00BFFF;
+}
+#nav {
+	background:#333;
+	color:white;
+	padding:20px;
+}
+#nav a {
+	border-right:1px solid #bbb;
+	display:inline-block;
+	color:white;
+	padding:5px;
+	font:bold 14px "Times New Roman";
+}
+#nav #register {
+	color:#DC143C;
+	font-size:30px;
+}
+#searching {
+	float:right;
+}
+#formsection {
+	text-align:center;
+}
+#form{
+
+}
+#footer {
+	text-align:center;
+	clear:both;
+	background-color:#333;
+	color:white;
+}
+#link{
+	color:#FF00FF;
+}

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="../css/registration.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div id="body" class="container">
+
+    <nav id="nav" class="navbar navbar-expand-lg ">
+
+        <div class="container">
+
+            <ul class="navbar-nav mr-auto">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOMEPAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactme.html">CONTACT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register" href="registration.html">REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">OUR SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">OUR TEAM</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-expand navbar">
+
+                    <form class="form-inline my-2 my-lg-0" id="searching" action="https://google.com/search" method="get" target="_blank">
+
+                        <input type="text" name="q" placeholder="Search" />
+                        <input type="submit" value="Search" />
+
+                    </form>
+
+
+                </ul>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+<section id="formsection" class="form-group">
+
+<form id="form" action="thank.html" method="get" onsubmit="return validation();">
+
+<h4>
+Please fill this registration form.
+</h4><br><br>
+
+<label class="form-group" for="name">Name:</label>
+<input class="form-control" id="name" type="text" placeholder="Only Letters" /><br><br>
+
+<label class="form-group" for="surname">Surname:</label>
+<input class="form-control" id="surname" type="text" placeholder="Only Letters" /><br><br>
+
+<label class="form-group" for="email">E-Mail:</label>
+<input class="form-control" id="email" type="text" placeholder="example@gmail.com"  /><br><br>
+
+<label class="form-group" for="birthday">Date of Birth:</label>
+<input class="form-control" id="birthday" type="text" placeholder="DD-MM-YYYY" /><br><br>
+
+<label class="form-group" for="phone">Telephone:</label>
+<input class="form-control" id="phone" type="text" placeholder="11 Digits"  /><br><br>
+
+<label class="form-group" for="password">Password:</label>
+<input class="form-control" id="password" type="password" placeholder="8-16 long, at least one uppercase, digit, special character." /><br><br>
+
+<label class="form-group" for="submission">Gender:</label><br>
+<label class="form-group" for="male">Male</label>
+<input id="male" name="gender" type="radio" checked><br>
+<label class="form-group" for="female">Female</label>
+<input id="female" name="gender" type="radio"  ><br><br>
+
+
+<label class="form-group" for="aboutme">About me & my pet:</label><br>
+<textarea class="form-control" id="aboutme" rows="4" cols="50" placeholder="Max: 200 characters." maxlength="200">
+</textarea><br><br>
+
+<label class="form-group" for="photo">Upload your photo:</label><br>
+<input class="form-control" id="photo" type="file" /><br><br>
+
+<label class="form-group" for="submission">Interests:</label><br>
+    <input  id="vehicle" type="checkbox" />
+<label class="form-group" for="vehicle">Autos and Vehicles</label><br>
+    <input  id="education" type="checkbox" />
+<label class="form-group" for="education">Education</label><br>
+    <input  id="gaming" type="checkbox" />
+<label class="form-group" for="gaming">Gaming</label><br>
+    <input  id="politics" type="checkbox" />
+<label class="form-group" for="politics">Politics</label><br>
+    <input  id="science" type="checkbox" />
+<label class="form-group" for="science">Science and Technology</label><br>
+    <input  id="comedy" type="checkbox" />
+<label class="form-group" for="comedy">Comedy</label><br>
+    <input  id="film" type="checkbox" />
+<label class="form-group" for="film">Film and Animation</label><br>
+    <input  id="music" type="checkbox" />
+
+<label class="form-group" for="music">Music</label><br>
+    <input  id="animal" type="checkbox" />
+
+    <label class="form-group" for="animal">Pets and Animals</label><br>
+    <input  id="sports" type="checkbox" />
+
+    <label class="form-group" for="sports">Sports</label><br><br>
+
+<input class="form-control" id="submission" type="submit"  value="Submit" /><br><br><br>
+
+<label class="form-group" for="reset">Reset:</label>
+<input class="form-control" id="reset" type="reset" value="Reset" />
+
+</form>
+
+</section>
+
+<footer id="footer" class="container">
+If you have any problem with our clinic, please contact me by clicking <a id="link" href="contactme.html">"Contact Me"</a> page.<br>
+Copyright © 2020 Batın Özkurt. All Rights Reserved
+</footer>
+
+</div>
+
+
+<!-- JS validation scripts -->
+<script>
+    function validation() {
+
+        var nameText = document.getElementById('name');
+        if(!nameValidation(nameText.value)){
+            nameText.focus();
+            return false;
+        }
+
+        var surnameText = document.getElementById('surname');
+        if(!surnameValidation(surnameText.value)){
+            surnameText.focus();
+            return false;
+        }
+
+        var pswdText = document.getElementById('password');
+        if(!passwordValidation(pswdText.value)){
+            pswdText.focus();
+            return false;
+        }
+
+        var email = document.getElementById('email');
+        if(!emailValidation(email.value)){
+            email.focus();
+            return false;
+        }
+
+        var tel = document.getElementById('phone');
+        if(!telephoneValidation(tel.value)){
+            tel.focus();
+            return false;
+        }
+
+        var date = document.getElementById('birthday');
+        if(!dateOfBirthValidation(date.value)){
+            date.focus();
+            return false;
+        }
+
+        alert('Successfully registered.');
+        return true;
+    }
+    function nameValidation(str){
+        var str = str.trim();
+
+        if(str == ""){
+            alert('Name can not be empty.');
+            return false;
+        }
+        else if(str.match(/[^a-z ]/gi)!= null){
+            alert('Invalid format.');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function surnameValidation(str){
+        var str = str.trim();
+
+        if(str == ""){
+            alert('Surname can not be empty.');
+            return false;
+        }
+        else if(str.match(/[^a-z]/gi)!= null){
+            alert('Invalid format.');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function emailValidation(str) {
+        str = str.trim();
+        var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(str.match(format) == null){
+            alert('Invalid format.');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function dateOfBirthValidation(str) {
+        str = str.trim();
+        var ary = str.split("-");
+
+        if(str == ""){
+            alert('Date can not be empty.');
+            return false;
+        }
+        else if(str.match(/^([0-2][0-9]|(3)[0-1])(\-)(((0)[0-9])|((1)[0-2]))(\-)\d{4}$/i) == null){
+            alert('Invalid format.');
+            return false;
+        }
+        else if((Number(ary[2])<1930) || (Number(ary[2])>2020)){
+            alert('Invalid format.');
+            return false;
+        }
+
+        return true;
+    }
+    function telephoneValidation(str) {
+        str = str.trim();
+
+        if(str == ""){
+            alert('Telephone number can not be empty.');
+            return false;
+        }
+        else if(str.match(/\D/g) != null){
+            alert('Telephone number is invalid please check that.');
+            return false;
+        }
+        else if(str.length!=11){
+            alert('Telephone number must be 11 digits.');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function passwordValidation(str) {
+        str = str.trim();
+        if(str == ""){
+            alert('Password must be filled out.');
+            return false;
+        }
+        else if(str.length<8 || str.length>16){
+            alert('Password should be at least 8 and at most 16 characters long.');
+            return false;
+        }
+        else if(str.match(/[A-Z]/g) == null){
+            alert('Password should contain at least one uppercase letter.');
+            return false;
+        }
+        else if(str.match(/[0-9]/g) == null){
+            alert('Password should contain at least one digit.');
+            return false;
+        }
+        else if(str.match(/[!@\[\]#$%^&*(),.?":{}|_\-<>]/g) == null){
+            alert('Password should contain at least one special character.');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+
+
+</body>
+
+</html>
